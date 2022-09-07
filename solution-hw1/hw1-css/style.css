@@ -10,6 +10,7 @@ h2{
 p { 
     text-align: center; 
      font-size: large;
+     font-size: 130%;
 }
 
 #mytarget{
@@ -22,11 +23,15 @@ p {
 #biggertext{
     text-align: center;
     font-size: large;
-    font-size: 150%;
+    font-size: 180%;
 
 }
 
 .moveimg {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
+    border: 3px solid rgb(2, 2, 2);
+}
+
+ 
