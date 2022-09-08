@@ -63,3 +63,10 @@ p {
     text-decoration: none;
     display: block;
   }
+
+a{
+    display: block;
+    width: 300px;
+    margin: auto;
+    font-size: 150%;
+}
