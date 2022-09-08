@@ -60,7 +60,7 @@ a.yellow:hover{
     font-size: 90%;
 }
 
-.button{
+.buttonclass{
     background-color: yellow;
     border: 2px solid rgb(0, 0, 0);
     margin: auto;
@@ -81,3 +81,20 @@ body{
 #checkouttext{
     font-size: 150%;
 }
+
+.cartbutton{
+    background-color: yellow;
+    border: 2px solid rgb(0, 0, 0);
+    margin: auto;
+    padding: 5px 5px
+}
+
+.milkdropdown {
+    width:'500px';
+    margin: auto;
+    text-align:centre;
+}
+select {
+    display: block;
+    margin: 0 auto;
+    }
