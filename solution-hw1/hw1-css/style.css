@@ -33,40 +33,10 @@ p {
     margin-right: auto;
     border: 3px solid rgb(2, 2, 2);
 }
-.dropbtn {
-    background-color: #ffffff;
-    color: rgb(2, 2, 2);
-    padding: 16px;
-    font-size: 16px;
-    border: 3px;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
 
 a {
     display: block;
-    width: 300px;
+    width: 315px;
     margin: auto;
     font-size: 150%;
 }
@@ -78,4 +48,8 @@ a {
 .nounderline{
     text-decoration: none;
     color: black
+}
+
+a.yellow:hover{
+    background-color: yellow;
 }
