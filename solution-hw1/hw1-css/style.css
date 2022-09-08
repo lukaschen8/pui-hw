@@ -3,7 +3,7 @@ hr {
     height: 3px;
 }
 
-h2{
+h3{
     text-align: center;
 }
 
@@ -64,9 +64,18 @@ p {
     display: block;
   }
 
-a{
+a {
     display: block;
     width: 300px;
     margin: auto;
     font-size: 150%;
+}
+
+.newanchor{
+    margin-left: -1px;
+}
+
+.nounderline{
+    text-decoration: none;
+    color: black
 }
