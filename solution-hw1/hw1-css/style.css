@@ -23,7 +23,7 @@ p {
 #biggertext{
     text-align: center;
     font-size: large;
-    font-size: 180%;
+    font-size: 200%;
 
 }
 
@@ -52,4 +52,28 @@ a {
 
 a.yellow:hover{
     background-color: yellow;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: gray;
+    font-size: 90%;
+}
+
+.button{
+    background-color: yellow;
+    border: 2px solid rgb(0, 0, 0);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.shorter{
+    width: 50%;
+}
+
+body{
+    padding-bottom: 500px;
 }
