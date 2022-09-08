@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 hr {
   border-top: 5px solid black;
   height: 3px;
@@ -9,8 +13,7 @@ h3 {
 
 p {
   /* text-align: center;  */
-  font-size: large;
-  font-size: 130%;
+  font-size: 20px;
 }
 
 #mytarget {
@@ -32,13 +35,6 @@ p {
   border: 3px solid rgb(2, 2, 2);
 }
 
-a {
-  display: block;
-  width: 315px;
-  margin: auto;
-  font-size: 150%;
-}
-
 .newanchor {
   margin-left: -1px;
 }
@@ -50,6 +46,11 @@ a {
 
 .product-box:hover {
   background-color: yellow;
+}
+
+.highlight-on-hover:hover {
+  background-color: yellow;
+  font-weight: bold;
 }
 
 .underline {
@@ -89,17 +90,18 @@ body {
 .milkdropdown {
   width: "500px";
   margin: auto;
-  text-align: centre;
+  text-align: left;
 }
 select {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .product-box {
   width: 320px;
   margin: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
 .price {
@@ -108,10 +110,18 @@ select {
 
 .cartprice {
   text-align: center;
+  margin: auto;
+  width: 300px;
+  text-align: left;
 }
 
 .shoppingtext {
   text-align: center;
   margin: auto;
   width: 300px;
+}
+
+.nav {
+  text-align: center;
+  font-size: x-large;
 }
