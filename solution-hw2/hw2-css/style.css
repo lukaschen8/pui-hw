@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  padding-bottom: 500px;
+}
+
+hr {
+  border-top: 5px solid black;
+  height: 3px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+#mytarget {
+  text-align: center;
+  font-size: large;
+  font-size: 130%;
+}
+
+#biggertext {
+  text-align: center;
+  font-size: large;
+  font-size: 200%;
+}
+
+.moveimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgb(2, 2, 2);
+}
+
+.newanchor {
+  margin-left: -1px;
+}
+
+.nounderline {
+  text-decoration: none;
+  color: black;
+}
+
+.product-box:hover {
+  background-color: yellow;
+}
+
+.highlight-on-hover:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: gray;
+  font-size: 90%;
+}
+
+.buttonclass {
+  background-color: yellow;
+  border: 2px solid rgb(0, 0, 0);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.shorter {
+  width: 50%;
+}
+
+#checkouttext {
+  font-size: 150%;
+}
+
+.cartbutton {
+  background-color: yellow;
+  border: 2px solid rgb(0, 0, 0);
+  margin-left: 30px;
+  padding: 5px 5px;
+}
+
+.milkdropdown {
+  width: "500px";
+  margin: auto;
+  text-align: left;
+}
+select {
+  display: block;
+  width: 70%;
+}
+
+.product-box {
+  width: 320px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.price {
+  margin: 0;
+}
+
+.cartprice {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+  text-align: left;
+}
+
+.shoppingtext {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
+.nav {
+  text-align: center;
+  font-size: x-large;
+}
