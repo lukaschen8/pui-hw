@@ -63,8 +63,8 @@ p {
   background-color: yellow;
   border: 2px solid rgb(0, 0, 0);
   margin: auto;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 10px 10px;
 }
 
@@ -120,4 +120,9 @@ select {
 .nav {
   text-align: center;
   font-size: x-large;
+}
+
+/*Flexbox stuff */
+.flexbox-container {
+  display: flex;
 }
