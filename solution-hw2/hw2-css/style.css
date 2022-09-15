@@ -177,3 +177,8 @@ select {
 .totalamt {
   margin-right: 270px;
 }
+
+.bigcinnamoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+}

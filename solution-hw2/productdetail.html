@@ -26,38 +26,47 @@
     <br />
     <br />
     <p id="biggertext">Original cinnamon roll</p>
-    <img
-      class="moveimg"
-      src="./hw2-assets/original-cinnamon-roll.jpeg"
-      width="550"
-      alt="Original cinnamon roll"
-    />
 
-    <div class="cartprice">
-      <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
-
-      <!-- Citing https://www.w3schools.com/tags/tag_select.asp-->
-
-      <p>Glazing:</p>
-      <div class="milkdropdown">
-        <select name="milks" id="milk">
-          <option value="Keep original">Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
-        </select>
-
-        <p>Pack size:</p>
-        <select name="packsize" id="pack">
-          <option value="1">1</option>
-          <option value="3">3</option>
-          <option value="6">6</option>
-          <option value="12">12</option>
-        </select>
+    <div class="bigcinnamoncontainer">
+      <div>
+        <img
+          class="moveimg"
+          src="./hw2-assets/original-cinnamon-roll.jpeg"
+          width="550"
+          alt="Original cinnamon roll"
+        />
       </div>
-      <br />
-      <br />
-      <p>$2.49 <span class="cartbutton">Add to Cart</span></p>
+
+      <div>
+        <div class="cartprice">
+          <p>
+            Customize our delicious, hand-made cinnamon roll to your liking!
+          </p>
+
+          <!-- Citing https://www.w3schools.com/tags/tag_select.asp-->
+
+          <p>Glazing:</p>
+          <div class="milkdropdown">
+            <select name="milks" id="milk">
+              <option value="Keep original">Keep original</option>
+              <option value="Sugar milk">Sugar milk</option>
+              <option value="Vanilla milk">Vanilla milk</option>
+              <option value="Double chocolate">Double chocolate</option>
+            </select>
+
+            <p>Pack size:</p>
+            <select name="packsize" id="pack">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <br />
+          <br />
+          <p>$2.49 <span class="cartbutton">Add to Cart</span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
