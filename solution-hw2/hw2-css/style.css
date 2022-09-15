@@ -64,7 +64,7 @@ p {
   border: 2px solid rgb(0, 0, 0);
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 10px 10px;
 }
 
@@ -137,5 +137,43 @@ select {
 
 .flexbox-container2 {
   display: flex;
-  flex-direction: column;
+}
+
+/* fix this */
+.flexbox-itemimage3 {
+  justify-content: flex-end;
+}
+
+.flexbox-pc {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  display: flex;
+}
+
+/* cart page css */
+
+.flexbox-containershop {
+  display: flex;
+  justify-content: center;
+}
+
+.containershop2 {
+  display: flex;
+  justify-content: center;
+}
+
+.totalcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexbox-itemimage3 {
+  margin-left: 100px;
+}
+
+.totalamt {
+  margin-right: 270px;
 }
