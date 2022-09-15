@@ -23,7 +23,7 @@ p {
 }
 
 #biggertext {
-  text-align: center;
+  text-align: left;
   font-size: large;
   font-size: 200%;
 }
@@ -44,6 +44,10 @@ p {
   color: black;
 }
 
+.spacing {
+  margin-right: 100px;
+  margin-left: 20px;
+}
 .product-box:hover {
   background-color: yellow;
 }
@@ -62,10 +66,8 @@ p {
 .buttonclass {
   background-color: yellow;
   border: 2px solid rgb(0, 0, 0);
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
   padding: 10px 10px;
+  margin-right: 80px;
 }
 
 .shorter {
@@ -132,13 +134,15 @@ select {
 
 .flexbox-container1 {
   display: flex;
+  margin-right: 20px;
 }
 
 .flexbox-container2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* flex-grow: 1; */
+  flex-grow: 1;
+  /* border-bottom: 3px; */
 }
 
 /* fix this */
@@ -149,23 +153,35 @@ select {
 .flexbox-pc {
   justify-content: flex-end;
   margin-left: auto;
+  border-bottom: 3px;
 }
 
 .container {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .flexbox-banner {
-  border-top: 5px black;
+  border-top: 5px solid black;
 }
 
 /* shopping cart page css */
-
 .flexbox-containershop {
   display: flex;
   justify-content: center;
 }
 
+.totallabel {
+  flex: 1 0 auto;
+}
+.movebutton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexbox-itemimage2 {
+  flex: 1 0 auto;
+}
 .containershop2 {
   display: flex;
   justify-content: center;
@@ -176,12 +192,20 @@ select {
   justify-content: flex-end;
 }
 
+.expand {
+  width: 400px;
+}
+.expand2 {
+  width: 700px;
+}
+
 .flexbox-itemimage3 {
-  margin-left: 100px;
+  margin-right: 80px;
 }
 
 .totalamt {
-  margin-right: 270px;
+  margin-right: 80px;
+  margin-top: 20px;
 }
 
 /* product detail css part  */
