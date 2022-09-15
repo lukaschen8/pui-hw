@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
 }
 
 hr {
@@ -44,6 +44,11 @@ p {
   color: black;
 }
 
+.removeleft {
+  text-align: left;
+  margin-left: 72px;
+}
+
 .spacing {
   margin-right: 100px;
   margin-left: 20px;
@@ -71,7 +76,8 @@ p {
 }
 
 .shorter {
-  width: 50%;
+  width: 60%;
+  margin-right: 2px;
 }
 
 #checkouttext {
@@ -100,6 +106,7 @@ select {
   margin: auto;
   margin-bottom: 30px;
   font-size: 20px;
+  padding-top: 10px;
 }
 
 .price {
@@ -194,6 +201,7 @@ select {
 
 .expand {
   width: 400px;
+  flex: 0 0 400px;
 }
 .expand2 {
   width: 700px;
