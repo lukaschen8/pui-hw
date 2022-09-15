@@ -122,21 +122,23 @@ select {
   font-size: x-large;
 }
 
-/*Flexbox stuff */
+/* index page Flexbox stuff */
 .flexbox-container {
   display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-around;
 }
 
-/* flex-direction: column; */
 .flexbox-container1 {
   display: flex;
 }
 
 .flexbox-container2 {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* flex-grow: 1; */
 }
 
 /* fix this */
@@ -145,15 +147,19 @@ select {
 }
 
 .flexbox-pc {
-  display: flex;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .container {
   display: flex;
 }
 
-/* cart page css */
+.flexbox-banner {
+  border-top: 5px black;
+}
+
+/* shopping cart page css */
 
 .flexbox-containershop {
   display: flex;
@@ -178,6 +184,7 @@ select {
   margin-right: 270px;
 }
 
+/* product detail css part  */
 .bigcinnamoncontainer {
   display: flex;
   justify-content: space-evenly;
