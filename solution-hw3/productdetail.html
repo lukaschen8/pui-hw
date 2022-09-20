@@ -5,6 +5,8 @@
     <title>Products</title>
     <!-- Adding CSS file here-->
     <link rel="stylesheet" href="hw3-css/style.css" />
+    <!-- Adding JS file here -->
+    <script src="hw3-js/price-computation.js" defer></script>
   </head>
 
   <body>
@@ -62,15 +64,16 @@
 
           <p>Glazing:</p>
           <div class="glazingdropdown">
-            <select name="glazing" id="milk">
-              <option value="Keep original">Keep original</option>
+            <select id="glazingOptions"
+                      onchange="glazingChange(this)">
+              <!-- <option value="Keep original">Keep original</option>
               <option value="Sugar milk">Sugar milk</option>
               <option value="Vanilla milk">Vanilla milk</option>
-              <option value="Double chocolate">Double chocolate</option>
+              <option value="Double chocolate">Double chocolate</option> -->
             </select>
 
             <p>Pack size:</p>
-            <select name="packsize" id="pack">
+            <select id="packoptions">
               <option value="1">1</option>
               <option value="3">3</option>
               <option value="6">6</option>
@@ -79,7 +82,8 @@
           </div>
           <br />
           <br />
-          <p>$2.49 <span class="cartbutton">Add to Cart</span></p>
+          <p id="totalprice">$2.49</p>
+             <span class="cartbutton">Add to Cart</span>
         </div>
       </div>
     </div>
