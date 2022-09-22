@@ -46,7 +46,7 @@ option8.text = "12";
 option8.value = "10";
 selectContainer2.appendChild(option8);
 
-//creating object for glazing
+//creating array of objects for glazing
 const glazingAdapt = [
   { glaze: "Keep Original", price: 0.0 },
   { glaze: "Sugar Milk", price: 0.0 },
@@ -54,6 +54,7 @@ const glazingAdapt = [
   { glaze: "Double Chocolate", price: 1.5 },
 ];
 
+//array of objects for packsize
 const packList = [
   { size: "1", priceMultiply: 1 },
   { size: "3", priceMultiply: 3 },
@@ -61,7 +62,7 @@ const packList = [
   { size: "12", priceMultiply: 10 },
 ];
 
-//for loop
+//for loop over array to create options
 for (let i = 0; i < glazingAdapt.length; i++) {
   let glazeSelect = glazingAdapt[i];
 

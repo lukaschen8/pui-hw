@@ -84,11 +84,17 @@ p {
   font-size: 150%;
 }
 
+.checkout {
+  display: flex;
+  align-items: center;
+}
+
 .cartbutton {
   background-color: yellow;
   border: 2px solid rgb(0, 0, 0);
-  margin-left: 100px;
+  margin-left: 80px;
   padding: 5px 5px;
+  height: fit-content;
 }
 
 .glazingdropdown {
@@ -214,4 +220,7 @@ select {
 .bigcinnamoncontainer {
   display: flex;
   justify-content: space-evenly;
+  /* justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 100px; */
 }
