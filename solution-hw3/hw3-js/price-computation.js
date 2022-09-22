@@ -1,4 +1,3 @@
-console.log("Hello world");
 const basePrice = 2.49;
 
 //creating array of objects for glazing
