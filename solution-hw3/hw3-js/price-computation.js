@@ -8,7 +8,7 @@ const glazingAdapt = [
   { glaze: "Double Chocolate", price: 1.5 },
 ];
 
-//array of objects for packsize
+//array of objects for pack sizes
 const packList = [
   { size: "1", priceMultiply: 1 },
   { size: "3", priceMultiply: 3 },
@@ -16,21 +16,21 @@ const packList = [
   { size: "12", priceMultiply: 10 },
 ];
 
-// When the page loads, find the select element.
+// When the page loads, find/retrieve the select element.
 //show options dynamically, linking glazing dropdown in HTML
-//const glazeSelect = document.getElementById("glaingOptions");
+
 const glazeSelect = document.querySelector("#glazingOptions");
 
 const packSelect = document.querySelector("#packoptions");
 
-//for loop over array to create options
+//for loop over array to create glazing options
 for (let i = 0; i < glazingAdapt.length; i++) {
   let glazeObj = glazingAdapt[i];
 
   //adds space to put in each option
   let options = document.createElement("option");
 
-  //adds into there, taking glaze name from list
+  //adds info there, taking glaze name from list
   options.text = glazeObj.glaze;
 
   //adds the value/price
@@ -40,20 +40,21 @@ for (let i = 0; i < glazingAdapt.length; i++) {
   glazeSelect.add(options);
 }
 
+//for loop over array to create pack size options
 for (let i = 0; i < packList.length; i++) {
   let packObj = packList[i];
 
   //adds space to put in each option
   let options = document.createElement("option");
 
-  //adds into there, taking pack size from list
-  options.textContent = packObj.size;
+  //adds info there, taking pack size from list
+  options.text = packObj.size;
 
-  //adds the value/price
+  //adds the value/price multiplier
   options.value = packObj.priceMultiply;
 
   //adding everything into the dropdown in HTML
-  packSelect.append(options);
+  packSelect.add(options);
 }
 
 function glazingChange(element) {
@@ -63,6 +64,7 @@ function glazingChange(element) {
   packMenu = document.getElementById("packoptions");
   let packPrice = parseFloat(packMenu.value);
 
+  // updating total price
   let newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
   let totalPrice = document.getElementById("totalprice");
   totalPrice.innerHTML = "$" + newPrice;
@@ -75,7 +77,7 @@ function packChange(element) {
   let glazingMenu = document.getElementById("glazingOptions");
   let glazingPrice = parseFloat(glazingMenu.value);
 
-  // updating price
+  // updating total price
   let newPrice = ((basePrice + glazingPrice) * packPrice).toFixed(2);
   let totalPrice = document.getElementById("totalprice");
   totalPrice.innerHTML = "$" + newPrice;
