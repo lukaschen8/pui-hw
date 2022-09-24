@@ -1,47 +1,65 @@
 const rolls = {
   Original: {
     basePrice: 2.49,
-    imageFile: "original-cinnamon-roll.jpg",
+    imageFile: "original-cinnamon-roll.jpeg",
   },
   Apple: {
     basePrice: 3.49,
-    imageFile: "apple-cinnamon-roll.jpg",
+    imageFile: "apple-cinnamon-roll.jpeg",
   },
   Raisin: {
     basePrice: 2.99,
-    imageFile: "raisin-cinnamon-roll.jpg",
+    imageFile: "raisin-cinnamon-roll.jpeg",
   },
   Walnut: {
     basePrice: 3.49,
-    imageFile: "walnut-cinnamon-roll.jpg",
+    imageFile: "walnut-cinnamon-roll.jpeg",
   },
   "Double-Chocolate": {
     basePrice: 3.99,
-    imageFile: "double-chocolate-cinnamon-roll.jpg",
+    imageFile: "double-chocolate-cinnamon-roll.jpeg",
   },
   Strawberry: {
     basePrice: 3.99,
-    imageFile: "strawberry-cinnamon-roll.jpg",
+    imageFile: "strawberry-cinnamon-roll.jpeg",
   },
 };
 
-//double quotes disappears!!!!!
+var cart = [];
 
-// var cart = [];
+// First, we get the query string from the URL. This is the list of parameters
+// that begins with a question mark. (These are known as "search parameters")
+const queryString = window.location.search;
 
-// // First, we get the query string from the URL. This is the list of parameters
-// // that begins with a question mark. (These are known as "search parameters")
-// const queryString = window.location.search;
+console.log(queryString);
 
-// // Then, we use the query string to create a URLSearchParams object:
-// const params = new URLSearchParams(queryString);
+// Then, we use the query string to create a URLSearchParams object:
+const params = new URLSearchParams(queryString);
 
-// // Finally, we can access the parameter we want using the "get" method:
-// const rollType = params.get("roll");
+console.log(params);
 
-// var rollPrice = rollType.basePrice;
-// var rollImage = rollType.imageFile;
+// Finally, we can access the parameter we want using the "get" method:
+const rollType = params.get("roll");
 
-// //Update header text
-// const headerElement = document.getElementsByTagName("title");
-// headerElement.innerText = rollType;
+console.log(rollType);
+
+var rollPrice = rolls[rollType].basePrice;
+var rollImage = rolls[rollType].imageFile;
+
+//Update header text
+const headerElement = document.getElementById("biggertext");
+headerElement.innerText = rollType + " Cinnamon Roll";
+
+//update title text
+const titleElement = document.getElementById("title");
+titleElement.innerText = rollType + " Cinnamon Roll";
+
+//update image
+const rollChange = document.getElementById("image");
+rollChange.src = "./hw4-assets/" + rollImage;
+
+//update price
+const priceElement = document.getElementById("totalprice");
+priceElement.innerText = "$" + rollPrice;
+
+console.log(rollImage);
