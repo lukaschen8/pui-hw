@@ -4,15 +4,21 @@ var cart = [];
 // that begins with a question mark. (These are known as "search parameters")
 const queryString = window.location.search;
 
+console.log(queryString);
+
 // Then, we use the query string to create a URLSearchParams object:
 const params = new URLSearchParams(queryString);
 
+console.log(params);
+
 // Finally, we can access the parameter we want using the "get" method:
 const rollType = params.get("roll");
+
+console.log(rollType);
 
 var rollPrice = rollType.basePrice;
 var rollImage = rollType.imageFile;
 
 //Update header text
 const headerElement = document.getElementsByTagName("title");
-headerElement.innerText = rollType;
+headerElement.innerText = "hello";
