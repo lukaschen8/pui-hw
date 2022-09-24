@@ -20,5 +20,11 @@ var rollPrice = rollType.basePrice;
 var rollImage = rollType.imageFile;
 
 //Update header text
-const headerElement = document.getElementsByTagName("title");
-headerElement.innerText = "hello";
+const headerElement = document.getElementById("biggertext");
+headerElement.innerText = rollType + " Cinnamon Roll";
+
+const titleElement = document.getElementById("title");
+titleElement.innerText = rollType + " Cinnamon Roll";
+
+const rollChange = document.getElementsByTagName("img");
+rollImage.src = "./hw4-assets/" + rollImage;
