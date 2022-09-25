@@ -1,4 +1,4 @@
-const basePrice = 2.49;
+const basePrice = rollPrice;
 
 //creating array of objects for glazing
 const glazingAdapt = [
