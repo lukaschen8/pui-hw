@@ -1,3 +1,5 @@
+//js page for provided data
+
 const rolls = {
   Original: {
     basePrice: 2.49,
@@ -24,4 +26,3 @@ const rolls = {
     imageFile: "strawberry-cinnamon-roll.jpeg",
   },
 };
-//why double quotes and saves to no quotes?

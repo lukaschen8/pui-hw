@@ -1,3 +1,5 @@
+//purpose: main set of js code for details
+
 let cart = [];
 
 // First, we get the query string from the URL. This is the list of parameters

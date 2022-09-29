@@ -1,3 +1,5 @@
+//js page for price computation for drop down and options
+
 const basePrice = rollPrice;
 
 //creating array of objects for glazing
