@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title id="title">Products</title>
+    <!-- Adding CSS file here-->
+    <link rel="stylesheet" href="hw5-css/style.css" />
+    <!-- Adding JS file here -->
+    <script defer src="hw5-js/rollsData.js"></script>
+    <script defer src="hw5-js/details.js"></script>
+    <script src="hw5-js/price-computation.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="flexbox-container1">
+        <a href="./index.html" class="newanchor">
+          <img
+            src="./hw5-assets/logo-01.svg"
+            width="400"
+            alt="Logo of Bun Bun"
+          />
+        </a>
+      </div>
+
+      <div class="flexbox-container2">
+        <div class="flexbox-pc">
+          <div class="nav">
+            <a
+              href="./index.html"
+              class="nounderline highlight-on-hover spacing"
+            >
+              PRODUCTS
+            </a>
+
+            <a
+              href="./shoppingcart.html"
+              class="nounderline highlight-on-hover spacing"
+            >
+              CART
+            </a>
+          </div>
+        </div>
+
+        <div class="flexbox-banner">
+          <p id="biggertext">Original cinnamon roll</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bigcinnamoncontainer">
+      <div>
+        <img
+          id="image"
+          class="moveimg"
+          src="./hw5-assets/original-cinnamon-roll.jpeg"
+          width="450"
+          alt="Original cinnamon roll"
+        />
+      </div>
+
+      <div class="">
+        <div class="cartprice">
+          <p>
+            Customize our delicious, hand-made cinnamon roll to your liking!
+          </p>
+
+          <!-- Citing https://www.w3schools.com/tags/tag_select.asp-->
+
+          <p>Glazing:</p>
+          <div class="glazingdropdown">
+            <select id="glazingOptions" onchange="glazingChange(this)"></select>
+
+            <p>Pack size:</p>
+            <select id="packoptions" onchange="packChange(this)"></select>
+          </div>
+
+          <div class="checkout">
+            <p id="totalprice"><b>$2.49</b></p>
+            <button class="cartbutton" onclick="addToCart()">
+              <b>Add to Cart</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
