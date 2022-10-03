@@ -32,7 +32,7 @@ titleElement.innerText = rollType + " Cinnamon Roll";
 
 //update image in HTML
 const rollChange = document.getElementById("image");
-rollChange.src = "./hw4-assets/" + rollImage;
+rollChange.src = "./hw5-assets/" + rollImage;
 
 //update price in HTML
 const priceElement = document.getElementById("totalprice");
