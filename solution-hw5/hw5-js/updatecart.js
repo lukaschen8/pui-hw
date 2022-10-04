@@ -16,15 +16,15 @@ class Roll {
 }
 
 //creating array of objects for glazing
-const glazingAdapt = [
-  { glaze: "Keep Original", price: 0.0 },
+let glazingAdapt = [
+  { glaze: "Original", price: 0.0 },
   { glaze: "Sugar Milk", price: 0.0 },
   { glaze: "Vanilla Milk", price: 0.5 },
   { glaze: "Double Chocolate", price: 1.5 },
 ];
 
 //array of objects for pack sizes
-const packList = [
+let packList = [
   { size: "1", priceMultiply: 1 },
   { size: "3", priceMultiply: 3 },
   { size: "6", priceMultiply: 5 },
@@ -37,14 +37,14 @@ function addItems(rollType, rollGlazing, packSize) {
 
   let glazeObject = glazingAdapt.find((o) => o.glaze === rollGlazing);
   let priceGlaze = glazeObject.price;
-
+  console.log(priceGlaze);
   let packObject = packList.find((o) => o.size === packSize);
   let pricePackSize = packObject.priceMultiply;
 
   let calculatedPrice = (basePrice + priceGlaze) * pricePackSize;
 
   //calculate price
-  let roll = new Roll(
+  const roll = new Roll(
     rollType,
     rollGlazing,
     packSize,
