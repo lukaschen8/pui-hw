@@ -68,7 +68,7 @@ for (const roll of shoppingcartSet) {
 
 //grabs <template> in HTML
 function createElement(roll) {
-  //grab referenceto roll template
+  //grab reference to roll template
   const template = document.querySelector("#roll-template");
   //get content inside of template and clone
   const clone = template.content.cloneNode(true);
@@ -96,7 +96,7 @@ function updateTotalPrice() {
   for (const roll of rollSet) {
     totalPrice = totalPrice + rollcalculatedPrice;
   }
-  const rollTotalPriceElement = document.querySelector("#totallabel");
+  const rollTotalPriceElement = document.querySelector("#totalamt");
   rollTotalPriceElement.innerText = "$" + totalPrice.toFixed(2);
 }
 
@@ -107,7 +107,7 @@ function updateElement(roll) {
 
   //grabbing ID tags in HTML
   const rollImageElement = roll.element.querySelector(
-    ".flexbox-container1 img"
+    ".flexbox-itemimage1 img"
   );
   const rollTypeElement = roll.element.querySelector("#image");
   const rollGlazingElement = roll.element.querySelector("#glazing");
