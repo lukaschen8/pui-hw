@@ -47,6 +47,7 @@ p {
 .removeleft {
   text-align: left;
   margin-left: 72px;
+  cursor: pointer;
 }
 
 .spacing {
@@ -77,8 +78,7 @@ p {
 }
 
 .shorter {
-  width: 60%;
-  margin-right: 2px;
+  margin-left: 420px;
 }
 
 #checkouttext {
@@ -182,6 +182,7 @@ select {
 .flexbox-containershop {
   display: flex;
   justify-content: center;
+  /* align-items: center; */
 }
 
 .totallabel {
@@ -194,8 +195,12 @@ select {
 
 .flexbox-itemimage2 {
   flex: 1 0 auto;
-  /* display: flex;
-  flex-direction: column; */
+  padding-top: 50px;
+}
+
+.flexbox-itemimage2 p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .containershop2 {
   display: flex;
