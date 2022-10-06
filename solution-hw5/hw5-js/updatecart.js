@@ -106,10 +106,8 @@ function updateElement(roll) {
   let rollImage = rolls[roll.type].imageFile;
 
   //grabbing ID tags in HTML
-  const rollImageElement = roll.element.querySelector(
-    ".flexbox-itemimage1 img"
-  );
-  const rollTypeElement = roll.element.querySelector("#image");
+  const rollImageElement = roll.element.querySelector(".moveimg");
+  const rollTypeElement = roll.element.querySelector("#typename");
   const rollGlazingElement = roll.element.querySelector("#glazing");
   const rollPackSizeElement = roll.element.querySelector("#pack-size");
   const rollBasePriceElement = roll.element.querySelector("#price");
