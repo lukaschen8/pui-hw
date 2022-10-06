@@ -107,7 +107,7 @@ function updateElement(roll) {
   const rollBasePriceElement = roll.element.querySelector("#price");
 
   //replacing the HTML w roll data
-  rollImageElement.src = "../hw5-assets/" + rollImage;
+  rollImageElement.src = "../solution-hw5/hw5-assets/" + rollImage;
   // .. means  moving out one directory,  one dot (.) means current directory
   rollTypeElement.innerText = roll.type + " Cinnamon Roll";
   rollGlazingElement.innerText = "Glazing: " + roll.glazing;
