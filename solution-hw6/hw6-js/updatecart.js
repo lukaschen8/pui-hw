@@ -1,8 +1,10 @@
 //js page for updating cart
 
-//create array to represent cart or should I use set?
 // let shoppingCart = [];
-const shoppingcartSet = new Set();
+// const shoppingcartSet = new Set();
+let cartData = JSON.parse(localStorage.getItem("storedRolls"));
+let shoppingcartSet = new Set([...cartData]);
+console.log(shoppingcartSet);
 
 //creating array of objects for glazing
 let glazingAdapt = [
@@ -107,12 +109,12 @@ function updateElement(roll) {
   const rollBasePriceElement = roll.element.querySelector("#price");
 
   //replacing the HTML w roll data
-  rollImageElement.src = "../solution-hw5/hw5-assets/" + rollImage;
+  rollImageElement.src = "../solution-hw6/hw6-assets/" + rollImage;
   // .. means  moving out one directory,  one dot (.) means current directory
   rollTypeElement.innerText = roll.type + " Cinnamon Roll";
   rollGlazingElement.innerText = "Glazing: " + roll.glazing;
   rollPackSizeElement.innerText = "Pack size: " + roll.size;
-  rollBasePriceElement.innerText = "$" + roll.calculatedPrice.toFixed(2);
+  // rollBasePriceElement.innerText = "$" + roll.calculatedPrice.toFixed(2);
 
   //show total price in HTML
   updateTotalPrice();
@@ -128,12 +130,25 @@ function deleteRoll(roll) {
 }
 
 //creating objects
-const original = addItems("Original", "Sugar Milk", "1");
-const walnut = addItems("Walnut", "Vanilla Milk", "12");
-const raisin = addItems("Raisin", "Sugar Milk", "3");
-const apple = addItems("Apple", "Original", "3");
+// const original = addItems("Original", "Sugar Milk", "1");
+// const walnut = addItems("Walnut", "Vanilla Milk", "12");
+// const raisin = addItems("Raisin", "Sugar Milk", "3");
+// const apple = addItems("Apple", "Original", "3");
 
 //loop that iterates through the set to create each roll HTML
 for (const roll of shoppingcartSet) {
   createElement(roll);
 }
+
+// function retrieveFromLocalStorage() {
+//   //grabs note data string and store as variable
+//   const rollArrayString = localStorage.getItem("storedRolls");
+
+//   //turn string of text into JS array
+//   const rollArray = JSON.parse(rollArrayString);
+//   console.log(rollArray);
+//   for (const rollData of rollArray) {
+//     const rollData = addItems(rollData.rollType, rollData.rollGlazing,
+//       rollData.packSize);
+//     createElement(roll);
+// }

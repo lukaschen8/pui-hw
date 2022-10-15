@@ -2,6 +2,12 @@
 
 let cart = [];
 
+let cartData = localStorage.getItem("storedRolls");
+console.log(cartData);
+cart = JSON.parse(cartData);
+
+console.log(cart);
+
 // First, we get the query string from the URL. This is the list of parameters
 // that begins with a question mark. (These are known as "search parameters")
 const queryString = window.location.search;
@@ -32,7 +38,7 @@ titleElement.innerText = rollType + " Cinnamon Roll";
 
 //update image in HTML
 const rollChange = document.getElementById("image");
-rollChange.src = "./hw5-assets/" + rollImage;
+rollChange.src = "./hw6-assets/" + rollImage;
 
 //update price in HTML
 const priceElement = document.getElementById("totalprice");
@@ -66,4 +72,13 @@ function addToCart() {
   //adding to array cart
   cart.push(newRoll);
   console.log(cart);
+
+  saveToLocalStorage();
+}
+
+function saveToLocalStorage() {
+  const rollArrayString = JSON.stringify(cart);
+
+  localStorage.setItem("storedRolls", rollArrayString);
+  console.log(localStorage.getItem("storedRolls"));
 }
