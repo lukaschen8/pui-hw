@@ -1,0 +1,237 @@
+body {
+  font-family: sans-serif;
+  padding-bottom: 200px;
+}
+
+hr {
+  border-top: 5px solid black;
+  height: 3px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+#mytarget {
+  text-align: center;
+  font-size: large;
+  font-size: 130%;
+}
+
+#biggertext {
+  text-align: left;
+  font-size: large;
+  font-size: 200%;
+}
+
+.moveimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgb(2, 2, 2);
+}
+
+.newanchor {
+  margin-left: -1px;
+}
+
+.nounderline {
+  text-decoration: none;
+  color: black;
+}
+
+.removeleft {
+  text-align: left;
+  margin-left: 72px;
+  cursor: pointer;
+}
+
+.spacing {
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+.product-box:hover {
+  background-color: yellow;
+}
+
+.highlight-on-hover:hover {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: gray;
+  font-size: 90%;
+}
+
+.buttonclass {
+  background-color: yellow;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 10px;
+  margin-right: 80px;
+}
+
+.shorter {
+  margin-left: 420px;
+}
+
+#checkouttext {
+  font-size: 150%;
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.cartbutton {
+  background-color: yellow;
+  border: 2px solid rgb(0, 0, 0);
+  margin-left: 40px;
+  padding: 10px 10px;
+  height: fit-content;
+  font-size: 100%;
+  width: 120px;
+}
+
+.glazingdropdown {
+  width: "500px";
+  margin: auto;
+  text-align: left;
+}
+select {
+  display: block;
+  width: 70%;
+}
+
+.product-box {
+  width: 320px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.price {
+  margin: 0;
+}
+
+.cartprice {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.shoppingtext {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
+.nav {
+  text-align: center;
+  font-size: x-large;
+}
+
+/* index page Flexbox stuff */
+.flexbox-container {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-around;
+}
+
+.flexbox-container1 {
+  display: flex;
+  margin-right: 20px;
+}
+
+.flexbox-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.flexbox-pc {
+  justify-content: flex-end;
+  margin-left: auto;
+  border-bottom: 3px;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.flexbox-banner {
+  border-top: 5px solid black;
+}
+
+/* shopping cart page css */
+.flexbox-containershop {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.totallabel {
+  flex: 1 0 auto;
+}
+.movebutton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexbox-itemimage2 {
+  flex: 1 0 auto;
+  padding-top: 50px;
+}
+
+.flexbox-itemimage2 p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.containershop2 {
+  display: flex;
+  justify-content: center;
+}
+
+.totalcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expand {
+  width: 400px;
+  flex: 0 0 400px;
+}
+.expand2 {
+  width: 700px;
+}
+
+.flexbox-itemimage3 {
+  margin-right: 80px;
+}
+
+.totalamt {
+  margin-right: 80px;
+  margin-top: 20px;
+}
+
+/* product detail css part  */
+.bigcinnamoncontainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 100px;
+}
