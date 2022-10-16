@@ -4,7 +4,7 @@ let cart = [];
 
 let cartData = localStorage.getItem("storedRolls");
 // console.log(cartData);
-cart = Array.from(JSON.parse(cartData));
+if (cartData) cart = Array.from(JSON.parse(cartData));
 
 console.log(cart);
 
