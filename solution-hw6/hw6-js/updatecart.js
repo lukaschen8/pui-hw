@@ -124,6 +124,10 @@ function updateElement(roll) {
 function deleteRoll(roll) {
   roll.element.remove();
   shoppingcartSet.delete(roll);
+  localStorage.setItem(
+    "storedRolls",
+    JSON.stringify(Array.from(shoppingcartSet))
+  );
 
   //update total price when roll is deleted
   updateTotalPrice();
