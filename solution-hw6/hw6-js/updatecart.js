@@ -7,20 +7,34 @@ let shoppingcartSet = new Set([...cartData]);
 console.log(shoppingcartSet);
 
 //creating array of objects for glazing
-let glazingAdapt = [
-  { glaze: "Original", price: 0.0 },
-  { glaze: "Sugar Milk", price: 0.0 },
-  { glaze: "Vanilla Milk", price: 0.5 },
-  { glaze: "Double Chocolate", price: 1.5 },
-];
+// let glazingAdapt = [
+//   { glaze: "Original", price: 0.0 },
+//   { glaze: "Sugar Milk", price: 0.0 },
+//   { glaze: "Vanilla Milk", price: 0.5 },
+//   { glaze: "Double Chocolate", price: 1.5 },
+// ];
 
-//array of objects for pack sizes
-let packList = [
-  { size: "1", priceMultiply: 1 },
-  { size: "3", priceMultiply: 3 },
-  { size: "6", priceMultiply: 5 },
-  { size: "12", priceMultiply: 10 },
-];
+// //array of objects for pack sizes
+// let packList = [
+//   { size: "1", priceMultiply: 1 },
+//   { size: "3", priceMultiply: 3 },
+//   { size: "6", priceMultiply: 5 },
+//   { size: "12", priceMultiply: 10 },
+// ];
+
+let glazingAdapt = {
+  "Keep Original": 0,
+  "Sugar Milk": 0,
+  "Vanilla Milk": 0.5,
+  "Double Chocolate": 1.5,
+};
+
+let packList = {
+  1: 1,
+  3: 3,
+  6: 5,
+  12: 10,
+};
 
 //creating class template for new roll
 class Roll {
@@ -29,7 +43,7 @@ class Roll {
     this.glazing = rollGlazing;
     this.size = packSize;
     this.basePrice = basePrice;
-    this.calculatedPrice = calculatedPrice;
+    this.calculatedPrice = 0;
 
     this.element = null; //ask abt this?
   }
@@ -114,7 +128,9 @@ function updateElement(roll) {
   rollTypeElement.innerText = roll.type + " Cinnamon Roll";
   rollGlazingElement.innerText = "Glazing: " + roll.glazing;
   rollPackSizeElement.innerText = "Pack size: " + roll.size;
-  // rollBasePriceElement.innerText = "$" + roll.calculatedPrice.toFixed(2);
+  roll.calculatedPrice =
+    (roll.basePrice + glazingAdapt[roll.glazing]) * packList[roll.size];
+  rollBasePriceElement.innerText = "$" + roll.calculatedPrice.toFixed(2);
 
   //show total price in HTML
   updateTotalPrice();
