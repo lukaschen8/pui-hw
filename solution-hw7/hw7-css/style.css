@@ -23,6 +23,11 @@ html {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h1 {
   display: flex;
   color: whitesmoke;
@@ -42,13 +47,15 @@ h2 {
 }
 
 .startquiz {
-  background-color: white;
-  /* border: 2px solid rgb(0, 0, 0); */
-  /* margin-left: 40px; */
+  background-color: peru;
+  /* border: 2px solid rgb(246, 246, 246); */
+  margin-left: 600px;
+  margin: auto;
+  display: block;
   /* padding: 10px 10px; */
-  /* height: fit-content; */
+  height: fit-content;
   font-size: 100%;
-  width: 130px;
+  width: 150px;
 }
 
 .question {
