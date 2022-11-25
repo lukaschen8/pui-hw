@@ -25,9 +25,9 @@ html {
 
 h1 {
   display: flex;
-  color: #212529;
+  color: whitesmoke;
   justify-content: center;
-  background: #adb5bd;
+  /* background: #adb5bd; */
   padding: 20px;
   border-bottom: 4px solid #253237;
 }
