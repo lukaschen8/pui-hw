@@ -16,7 +16,7 @@ html {
 }
 
 .bg {
-  background-image: url("../hw7-assets/coffeebackground.jpg");
+  background-image: url("../hw7-assets/coffeebackground2.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,8 +28,8 @@ h1 {
   color: whitesmoke;
   justify-content: center;
   /* background: #adb5bd; */
-  padding: 20px;
-  border-bottom: 4px solid #253237;
+  /* padding: 20px; */
+  /* border-bottom: 4px dotted white; */
 }
 
 h2 {
