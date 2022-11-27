@@ -1,46 +1,46 @@
-//Global Variables
-//Variables to track each possible quiz outcome.
-var questionCount = 0;
-var badguyScore = 0;
-var wtpoScore = 0;
-var lovelyScore = 0;
-var bellyacheScore = 0;
+//Global letiables
+//letiables to track each possible quiz outcome.
+let questionCount = 0;
+let badguyScore = 0;
+let wtpoScore = 0;
+let lovelyScore = 0;
+let bellyacheScore = 0;
 
-//Variables for each quiz question.
-var q1a1 = document.getElementById("q1a1");
-var q1a2 = document.getElementById("q1a2");
-var q1a3 = document.getElementById("q1a3");
-var q1a4 = document.getElementById("q1a4");
+//letiables for each quiz question.
+let q1a1 = document.getElementById("q1a1");
+let q1a2 = document.getElementById("q1a2");
+let q1a3 = document.getElementById("q1a3");
+let q1a4 = document.getElementById("q1a4");
 
-var q2a1 = document.getElementById("q2a1");
-var q2a2 = document.getElementById("q2a2");
-var q2a3 = document.getElementById("q2a3");
-var q2a4 = document.getElementById("q2a4");
+let q2a1 = document.getElementById("q2a1");
+let q2a2 = document.getElementById("q2a2");
+let q2a3 = document.getElementById("q2a3");
+let q2a4 = document.getElementById("q2a4");
 
-var q3a1 = document.getElementById("q3a1");
-var q3a2 = document.getElementById("q3a2");
-var q3a3 = document.getElementById("q3a3");
-var q3a4 = document.getElementById("q3a4");
+let q3a1 = document.getElementById("q3a1");
+let q3a2 = document.getElementById("q3a2");
+let q3a3 = document.getElementById("q3a3");
+let q3a4 = document.getElementById("q3a4");
 
-var q4a1 = document.getElementById("q4a1");
-var q4a2 = document.getElementById("q4a2");
-var q4a3 = document.getElementById("q4a3");
-var q4a4 = document.getElementById("q4a4");
+let q4a1 = document.getElementById("q4a1");
+let q4a2 = document.getElementById("q4a2");
+let q4a3 = document.getElementById("q4a3");
+let q4a4 = document.getElementById("q4a4");
 
-var q5a1 = document.getElementById("q5a1");
-var q5a2 = document.getElementById("q5a2");
-var q5a3 = document.getElementById("q5a3");
-var q5a4 = document.getElementById("q5a4");
+let q5a1 = document.getElementById("q5a1");
+let q5a2 = document.getElementById("q5a2");
+let q5a3 = document.getElementById("q5a3");
+let q5a4 = document.getElementById("q5a4");
 
-var q6a1 = document.getElementById("q6a1");
-var q6a2 = document.getElementById("q6a2");
-var q6a3 = document.getElementById("q6a3");
-var q6a4 = document.getElementById("q6a4");
+let q6a1 = document.getElementById("q6a1");
+let q6a2 = document.getElementById("q6a2");
+let q6a3 = document.getElementById("q6a3");
+let q6a4 = document.getElementById("q6a4");
 
-var result = document.getElementById("result");
-var restart = document.getElementById("restart");
+let result = document.getElementById("result");
+let restart = document.getElementById("restart");
 
-//#TODO: Add Event Listeners to your answer choice variables.
+//#TODO: Add Event Listeners to your answer choice letiables.
 q1a1.addEventListener("click", badguy);
 q1a2.addEventListener("click", wtpo);
 q1a3.addEventListener("click", lovely);
@@ -214,11 +214,11 @@ function updateResult() {
 
 function refresh() {
   result.innerHTML = "Your result is...";
-  var questionCount = 0;
-  var badguyScore = 0;
-  var wtpoScore = 0;
-  var lovelyScore = 0;
-  var bellyacheScore = 0;
+  let questionCount = 0;
+  let badguyScore = 0;
+  let wtpoScore = 0;
+  let lovelyScore = 0;
+  let bellyacheScore = 0;
   document.getElementById("q1a1").disabled = false;
   document.getElementById("q1a2").disabled = false;
   document.getElementById("q1a3").disabled = false;
