@@ -1,5 +1,5 @@
-//Global letiables
-//letiables to track each possible quiz outcome.
+//Global variables
+//variables to track each possible quiz outcome.
 let questionCount = 0;
 let badguyScore = 0;
 let wtpoScore = 0;
