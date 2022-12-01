@@ -6,7 +6,7 @@ let arrivisteScore = 0;
 let klvnScore = 0;
 let cafeCarnegieScore = 0;
 
-//letiables for each quiz question.
+//variables for each quiz question.
 let q1a1 = document.getElementById("q1a1");
 let q1a2 = document.getElementById("q1a2");
 let q1a3 = document.getElementById("q1a3");
@@ -40,7 +40,7 @@ let q6a4 = document.getElementById("q6a4");
 let result = document.getElementById("result");
 let restart = document.getElementById("restart");
 
-//#TODO: Add Event Listeners to your answer choice variables.
+// Add Event Listeners to answer choice variables.
 q1a1.addEventListener("click", sidecar);
 q1a2.addEventListener("click", arriviste);
 q1a3.addEventListener("click", klvn);
@@ -97,9 +97,12 @@ q6a4.addEventListener("click", disableBtn6);
 
 restart.addEventListener("click", refresh);
 
-//#TODO: Define quiz functions here
+//Define quiz functions here
 function disableBtn1() {
   document.getElementById("q1a1").disabled = true;
+  let questionTwoHeader = document.getElementById("q2header");
+  let rect = questionTwoHeader.getBoundingClientRect();
+  window.scrollTo(0, rect.top);
   document.getElementById("q1a2").disabled = true;
   document.getElementById("q1a3").disabled = true;
   document.getElementById("q1a4").disabled = true;
@@ -191,10 +194,10 @@ function updateResult() {
       "Your result is... <i>Sidecar</i> and <i>KLVN Coffee Lab!</i>";
   } else if (sidecarScore == 3 && cafeCarnegieScore == 3) {
     result.innerHTML =
-      "Your result is... <i>Sidecar</i> and <i>Cafe Carnegie!</i>";
+      "Your result is... <i>Sidecar</i> and <i>Cafe Carnegie!</iz>";
   } else if (arrivisteScore == 3 && klvnScore == 3) {
     result.innerHTML =
-      "Your result is... <i>Arriviste</i> and <i>KLVN Coffee Lab!</i>";
+      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> and <i>&nbsp;KLVN Coffee Lab!</i>";
   } else if (arrivisteScore == 3 && cafeCarnegieScore == 3) {
     result.innerHTML =
       "Your result is... <i>Arriviste</i> and <i>Cafe Carnegie!</i>";

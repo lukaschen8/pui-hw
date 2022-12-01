@@ -15,6 +15,9 @@ html {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .bg {
   background-image: url("../hw7-assets/coffeebackground2.jpg");
   height: 100%;
