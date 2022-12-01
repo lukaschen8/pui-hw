@@ -1,10 +1,10 @@
 //Global variables
 //variables to track each possible quiz outcome.
 let questionCount = 0;
-let badguyScore = 0;
-let wtpoScore = 0;
-let lovelyScore = 0;
-let bellyacheScore = 0;
+let sidecarScore = 0;
+let arrivisteScore = 0;
+let klvnScore = 0;
+let cafeCarnegieScore = 0;
 
 //letiables for each quiz question.
 let q1a1 = document.getElementById("q1a1");
@@ -40,56 +40,56 @@ let q6a4 = document.getElementById("q6a4");
 let result = document.getElementById("result");
 let restart = document.getElementById("restart");
 
-//#TODO: Add Event Listeners to your answer choice letiables.
-q1a1.addEventListener("click", badguy);
-q1a2.addEventListener("click", wtpo);
-q1a3.addEventListener("click", lovely);
-q1a4.addEventListener("click", bellyache);
+//#TODO: Add Event Listeners to your answer choice variables.
+q1a1.addEventListener("click", sidecar);
+q1a2.addEventListener("click", arriviste);
+q1a3.addEventListener("click", klvn);
+q1a4.addEventListener("click", cafeCarnegie);
 q1a1.addEventListener("click", disableBtn1);
 q1a2.addEventListener("click", disableBtn1);
 q1a3.addEventListener("click", disableBtn1);
 q1a4.addEventListener("click", disableBtn1);
 
-q2a1.addEventListener("click", badguy);
-q2a2.addEventListener("click", wtpo);
-q2a3.addEventListener("click", lovely);
-q2a4.addEventListener("click", bellyache);
+q2a1.addEventListener("click", sidecar);
+q2a2.addEventListener("click", arriviste);
+q2a3.addEventListener("click", klvn);
+q2a4.addEventListener("click", cafeCarnegie);
 q2a1.addEventListener("click", disableBtn2);
 q2a2.addEventListener("click", disableBtn2);
 q2a3.addEventListener("click", disableBtn2);
 q2a4.addEventListener("click", disableBtn2);
 
-q3a1.addEventListener("click", badguy);
-q3a2.addEventListener("click", wtpo);
-q3a3.addEventListener("click", lovely);
-q3a4.addEventListener("click", bellyache);
+q3a1.addEventListener("click", sidecar);
+q3a2.addEventListener("click", arriviste);
+q3a3.addEventListener("click", klvn);
+q3a4.addEventListener("click", cafeCarnegie);
 q3a1.addEventListener("click", disableBtn3);
 q3a2.addEventListener("click", disableBtn3);
 q3a3.addEventListener("click", disableBtn3);
 q3a4.addEventListener("click", disableBtn3);
 
-q4a1.addEventListener("click", badguy);
-q4a2.addEventListener("click", wtpo);
-q4a3.addEventListener("click", lovely);
-q4a4.addEventListener("click", bellyache);
+q4a1.addEventListener("click", sidecar);
+q4a2.addEventListener("click", arriviste);
+q4a3.addEventListener("click", klvn);
+q4a4.addEventListener("click", cafeCarnegie);
 q4a1.addEventListener("click", disableBtn4);
 q4a2.addEventListener("click", disableBtn4);
 q4a3.addEventListener("click", disableBtn4);
 q4a4.addEventListener("click", disableBtn4);
 
-q5a1.addEventListener("click", badguy);
-q5a2.addEventListener("click", wtpo);
-q5a3.addEventListener("click", lovely);
-q5a4.addEventListener("click", bellyache);
+q5a1.addEventListener("click", sidecar);
+q5a2.addEventListener("click", arriviste);
+q5a3.addEventListener("click", klvn);
+q5a4.addEventListener("click", cafeCarnegie);
 q5a1.addEventListener("click", disableBtn5);
 q5a2.addEventListener("click", disableBtn5);
 q5a3.addEventListener("click", disableBtn5);
 q5a4.addEventListener("click", disableBtn5);
 
-q6a1.addEventListener("click", badguy);
-q6a2.addEventListener("click", wtpo);
-q6a3.addEventListener("click", lovely);
-q6a4.addEventListener("click", bellyache);
+q6a1.addEventListener("click", sidecar);
+q6a2.addEventListener("click", arriviste);
+q6a3.addEventListener("click", klvn);
+q6a4.addEventListener("click", cafeCarnegie);
 q6a1.addEventListener("click", disableBtn6);
 q6a2.addEventListener("click", disableBtn6);
 q6a3.addEventListener("click", disableBtn6);
@@ -135,8 +135,8 @@ function disableBtn6() {
   document.getElementById("q6a4").disabled = true;
 }
 
-function badguy() {
-  badguyScore += 1;
+function sidecar() {
+  sidecarScore += 1;
   questionCount += 1;
   //alert("One point to bad guy!");
   if (questionCount >= 6) {
@@ -144,8 +144,8 @@ function badguy() {
   }
 }
 
-function wtpo() {
-  wtpoScore += 1;
+function arriviste() {
+  arrivisteScore += 1;
   questionCount += 1;
   //alert("One point to when the party's over!");
   if (questionCount >= 6) {
@@ -153,19 +153,19 @@ function wtpo() {
   }
 }
 
-function lovely() {
-  lovelyScore += 1;
+function klvn() {
+  klvnScore += 1;
   questionCount += 1;
-  //alert("One point to lovely");
+  //alert("One point to klvn");
   if (questionCount >= 6) {
     updateResult();
   }
 }
 
-function bellyache() {
-  bellyacheScore += 1;
+function cafeCarnegie() {
+  cafeCarnegieScore += 1;
   questionCount += 1;
-  //alert("One point to bellyache!");
+  //alert("One point to cafeCarnegie!");
   if (questionCount >= 6) {
     updateResult();
   }
@@ -173,40 +173,42 @@ function bellyache() {
 
 function updateResult() {
   if (
-    badguyScore == 2 &&
-    wtpoScore == 2 &&
-    (lovelyScore == 2 || bellyacheScore == 2)
+    sidecarScore == 2 &&
+    arrivisteScore == 2 &&
+    (klvnScore == 2 || cafeCarnegieScore == 2)
   ) {
-    result.innerHTML = "Your result is... any Billie Eilish Song!</i>";
+    result.innerHTML = "Your result is... <i>any PGH Cafe!</i>";
   } else if (
-    lovelyScore == 2 &&
-    bellyacheScore == 2 &&
-    (badguyScore == 2 || wtpoScore == 2)
+    klvnScore == 2 &&
+    cafeCarnegieScore == 2 &&
+    (sidecarScore == 2 || arrivisteScore == 2)
   ) {
-    result.innerHTML = "Your result is... any Billie Eilish Song!</i>";
-  } else if (badguyScore == 3 && wtpoScore == 3) {
+    result.innerHTML = "Your result is... <i>any PGH Cafe!</i>";
+  } else if (sidecarScore == 3 && arrivisteScore == 3) {
+    result.innerHTML = "Your result is... <i>Sidecar</i> and <i>Arriviste</i>";
+  } else if (sidecarScore == 3 && klvnScore == 3) {
     result.innerHTML =
-      "Your result is... <i>bad guy</i> and <i>when the party's over!</i>";
-  } else if (badguyScore == 3 && lovelyScore == 3) {
-    result.innerHTML = "Your result is... <i>bad guy</i> and <i>lovely!</i>";
-  } else if (badguyScore == 3 && bellyacheScore == 3) {
-    result.innerHTML = "Your result is... <i>bad guy</i> and <i>bellyache!</i>";
-  } else if (wtpoScore == 3 && lovelyScore == 3) {
+      "Your result is... <i>Sidecar</i> and <i>KLVN Coffee Lab!</i>";
+  } else if (sidecarScore == 3 && cafeCarnegieScore == 3) {
     result.innerHTML =
-      "Your result is... <i>when the party's over</i> and <i>lovely!</i>";
-  } else if (wtpoScore == 3 && bellyacheScore == 3) {
+      "Your result is... <i>Sidecar</i> and <i>Cafe Carnegie!</i>";
+  } else if (arrivisteScore == 3 && klvnScore == 3) {
     result.innerHTML =
-      "Your result is... <i>when the party's over</i> and <i>bellyache!</i>";
-  } else if (lovelyScore == 3 && bellyacheScore == 3) {
-    result.innerHTML = "Your result is... <i>lovely</i> and <i>bellyache!</i>";
-  } else if (badguyScore >= 3) {
-    result.innerHTML = "Your result is... <i>bad guy!</i>";
-  } else if (wtpoScore >= 3) {
-    result.innerHTML = "Your result is... <i>when the party's over!</i>";
-  } else if (lovelyScore >= 3) {
-    result.innerHTML = "Your result is... <i>lovely ft. Khalid!</i>";
-  } else if (bellyacheScore >= 3) {
-    result.innerHTML = "Your result is... <i>bellyache!</i>";
+      "Your result is... <i>Arriviste</i> and <i>KLVN Coffee Lab!</i>";
+  } else if (arrivisteScore == 3 && cafeCarnegieScore == 3) {
+    result.innerHTML =
+      "Your result is... <i>Arriviste</i> and <i>Cafe Carnegie!</i>";
+  } else if (klvnScore == 3 && cafeCarnegieScore == 3) {
+    result.innerHTML =
+      "Your result is... <i>KLVN Coffee Lab</i> and <i>Cafe Carnegie!</i>";
+  } else if (sidecarScore >= 3) {
+    result.innerHTML = "Your result is... <i>Sidecar!</i>";
+  } else if (arrivisteScore >= 3) {
+    result.innerHTML = "Your result is... <i>Arriviste!</i>";
+  } else if (klvnScore >= 3) {
+    result.innerHTML = "Your result is... <i>KLVN Coffee Lab!</i>";
+  } else if (cafeCarnegieScore >= 3) {
+    result.innerHTML = "Your result is... <i>Cafe Carnegie!</i>";
   } else {
     result.innerHTML = "Hmm... try again!";
   }
@@ -215,10 +217,10 @@ function updateResult() {
 function refresh() {
   result.innerHTML = "Your result is...";
   let questionCount = 0;
-  let badguyScore = 0;
-  let wtpoScore = 0;
-  let lovelyScore = 0;
-  let bellyacheScore = 0;
+  let sidecarScore = 0;
+  let arrivisteScore = 0;
+  let klvnScore = 0;
+  let cafeCarnegieScore = 0;
   document.getElementById("q1a1").disabled = false;
   document.getElementById("q1a2").disabled = false;
   document.getElementById("q1a3").disabled = false;
