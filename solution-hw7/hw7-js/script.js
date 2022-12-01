@@ -39,6 +39,7 @@ let q6a4 = document.getElementById("q6a4");
 
 let result = document.getElementById("result");
 let restart = document.getElementById("restart");
+let learnMore = document.getElementById("learnMore");
 
 // Add Event Listeners to answer choice variables.
 q1a1.addEventListener("click", sidecar);
@@ -98,22 +99,32 @@ q6a4.addEventListener("click", disableBtn6);
 restart.addEventListener("click", refresh);
 
 //Define quiz functions here
+
 function disableBtn1() {
-  document.getElementById("q1a1").disabled = true;
+  let bodyRect = document.body.getBoundingClientRect();
   let questionTwoHeader = document.getElementById("q2header");
   let rect = questionTwoHeader.getBoundingClientRect();
-  window.scrollTo(0, rect.top);
+  window.scrollTo(0, rect.top - bodyRect.top - 20);
+  document.getElementById("q1a1").disabled = true;
   document.getElementById("q1a2").disabled = true;
   document.getElementById("q1a3").disabled = true;
   document.getElementById("q1a4").disabled = true;
 }
 function disableBtn2() {
+  let bodyRect = document.body.getBoundingClientRect();
+  let questionThreeHeader = document.getElementById("q3header");
+  let rect = questionThreeHeader.getBoundingClientRect();
+  window.scrollTo(0, rect.top - bodyRect.top - 20);
   document.getElementById("q2a1").disabled = true;
   document.getElementById("q2a2").disabled = true;
   document.getElementById("q2a3").disabled = true;
   document.getElementById("q2a4").disabled = true;
 }
 function disableBtn3() {
+  let bodyRect = document.body.getBoundingClientRect();
+  let questionThreeHeader = document.getElementById("q3header");
+  let rect = questionThreeHeader.getBoundingClientRect();
+  window.scrollTo(0, rect.top - bodyRect.top - 20);
   document.getElementById("q3a1").disabled = true;
   document.getElementById("q3a2").disabled = true;
   document.getElementById("q3a3").disabled = true;
@@ -188,6 +199,7 @@ function updateResult() {
   ) {
     result.innerHTML = "Your result is... <i>any PGH Cafe!</i>";
   } else if (sidecarScore == 3 && arrivisteScore == 3) {
+    learnMore.href = "./coffee.html#Sidecar";
     result.innerHTML = "Your result is... <i>Sidecar</i> and <i>Arriviste</i>";
   } else if (sidecarScore == 3 && klvnScore == 3) {
     result.innerHTML =
