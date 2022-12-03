@@ -122,8 +122,8 @@ function disableBtn2() {
 }
 function disableBtn3() {
   let bodyRect = document.body.getBoundingClientRect();
-  let questionThreeHeader = document.getElementById("q3header");
-  let rect = questionThreeHeader.getBoundingClientRect();
+  let questionFourHeader = document.getElementById("q4header");
+  let rect = questionFourHeader.getBoundingClientRect();
   window.scrollTo(0, rect.top - bodyRect.top - 20);
   document.getElementById("q3a1").disabled = true;
   document.getElementById("q3a2").disabled = true;
@@ -131,12 +131,20 @@ function disableBtn3() {
   document.getElementById("q3a4").disabled = true;
 }
 function disableBtn4() {
+  let bodyRect = document.body.getBoundingClientRect();
+  let questionFiveHeader = document.getElementById("q5header");
+  let rect = questionFiveHeader.getBoundingClientRect();
+  window.scrollTo(0, rect.top - bodyRect.top - 20);
   document.getElementById("q4a1").disabled = true;
   document.getElementById("q4a2").disabled = true;
   document.getElementById("q4a3").disabled = true;
   document.getElementById("q4a4").disabled = true;
 }
 function disableBtn5() {
+  let bodyRect = document.body.getBoundingClientRect();
+  let questionSixHeader = document.getElementById("q6header");
+  let rect = questionSixHeader.getBoundingClientRect();
+  window.scrollTo(0, rect.top - bodyRect.top - 20);
   document.getElementById("q5a1").disabled = true;
   document.getElementById("q5a2").disabled = true;
   document.getElementById("q5a3").disabled = true;
@@ -209,7 +217,7 @@ function updateResult() {
       "Your result is... <i>Sidecar</i> and <i>Cafe Carnegie!</iz>";
   } else if (arrivisteScore == 3 && klvnScore == 3) {
     result.innerHTML =
-      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> and <i>&nbsp;KLVN Coffee Lab!</i>";
+      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> &nbsp;and &nbsp;<i>&nbsp;KLVN Coffee Lab!</i>";
   } else if (arrivisteScore == 3 && cafeCarnegieScore == 3) {
     result.innerHTML =
       "Your result is... <i>Arriviste</i> and <i>Cafe Carnegie!</i>";
