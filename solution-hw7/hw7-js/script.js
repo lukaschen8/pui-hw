@@ -208,29 +208,39 @@ function updateResult() {
     result.innerHTML = "Your result is... <i>any PGH Cafe!</i>";
   } else if (sidecarScore == 3 && arrivisteScore == 3) {
     learnMore.href = "./coffee.html#Sidecar";
-    result.innerHTML = "Your result is... <i>Sidecar</i> and <i>Arriviste</i>";
+    result.innerHTML =
+      "Your result is... <i>&nbsp;Sidecar&nbsp;</i> and <i>&nbsp;Arriviste!</i>";
   } else if (sidecarScore == 3 && klvnScore == 3) {
+    learnMore.href = "./coffee.html#Sidecar";
     result.innerHTML =
-      "Your result is... <i>Sidecar</i> and <i>KLVN Coffee Lab!</i>";
+      "Your result is... <i>&nbsp;Sidecar&nbsp;</i> and <i>&nbsp;KLVN Coffee Lab!</i>";
   } else if (sidecarScore == 3 && cafeCarnegieScore == 3) {
+    learnMore.href = "./coffee.html#Sidecar";
     result.innerHTML =
-      "Your result is... <i>Sidecar</i> and <i>Cafe Carnegie!</iz>";
+      "Your result is... <i>&nbsp;Sidecar&nbsp;</i> and <i>&nbsp;Cafe Carnegie!</iz>";
   } else if (arrivisteScore == 3 && klvnScore == 3) {
+    learnMore.href = "./coffee.html#Arriviste";
     result.innerHTML =
-      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> &nbsp;and &nbsp;<i>&nbsp;KLVN Coffee Lab!</i>";
+      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> and <i>&nbsp;KLVN Coffee Lab!</i>";
   } else if (arrivisteScore == 3 && cafeCarnegieScore == 3) {
+    learnMore.href = "./coffee.html#Arriviste";
     result.innerHTML =
-      "Your result is... <i>Arriviste</i> and <i>Cafe Carnegie!</i>";
+      "Your result is... <i>&nbsp;Arriviste&nbsp;</i> and <i>&nbsp;Cafe Carnegie!</i>";
   } else if (klvnScore == 3 && cafeCarnegieScore == 3) {
+    learnMore.href = "./coffee.html#Klvn";
     result.innerHTML =
-      "Your result is... <i>KLVN Coffee Lab</i> and <i>Cafe Carnegie!</i>";
+      "Your result is... <i>&nbsp;KLVN Coffee Lab&nbsp;</i> and <i>&nbsp;Cafe Carnegie!</i>";
   } else if (sidecarScore >= 3) {
+    learnMore.href = "./coffee.html#Sidecar";
     result.innerHTML = "Your result is... <i>Sidecar!</i>";
   } else if (arrivisteScore >= 3) {
+    learnMore.href = "./coffee.html#Arriviste";
     result.innerHTML = "Your result is... <i>Arriviste!</i>";
   } else if (klvnScore >= 3) {
+    learnMore.href = "./coffee.html#Klvn";
     result.innerHTML = "Your result is... <i>KLVN Coffee Lab!</i>";
   } else if (cafeCarnegieScore >= 3) {
+    learnMore.href = "./coffee.html#Carnegie";
     result.innerHTML = "Your result is... <i>Cafe Carnegie!</i>";
   } else {
     result.innerHTML = "Hmm... try again!";
