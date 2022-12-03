@@ -5,7 +5,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: #efb54a;
+  font-family: "Questrial", sans-serif;
 }
+
 .container {
   height: 350px;
   width: 350px;
