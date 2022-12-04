@@ -6,7 +6,7 @@
 body {
   font-family: "Questrial", sans-serif;
   margin: 2em;
-  background: hsl(39, 35%, 56%);
+  background: #c0923c;
 }
 
 body,
@@ -50,7 +50,7 @@ h2 {
 }
 
 .startquiz {
-  background-color: rgb(136, 85, 34);
+  background-color: rgb(187, 118, 50);
   /* border: 2px solid rgb(246, 246, 246); */
   margin-left: 600px;
   margin: auto;
@@ -64,7 +64,7 @@ h2 {
 }
 
 .startquiz:hover {
-  background-color: #e7b435;
+  background-color: #daae3d;
   /* color: white; */
 }
 
@@ -99,7 +99,7 @@ div.answer-choice:hover {
   font-family: "Questrial";
 }
 #restart {
-  background-color: #377596;
+  background-color: #177ca3;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -113,7 +113,7 @@ div.answer-choice:hover {
 }
 
 #restart:hover {
-  background-color: #0c2379;
+  background-color: #0b6c89;
   /* color: white; */
 }
 
@@ -133,7 +133,7 @@ div.answer-choice:hover {
 }
 
 #cafeinfo:hover {
-  background-color: #e7b435;
+  background-color: #a96c2b;
   /* color: white; */
 }
 
