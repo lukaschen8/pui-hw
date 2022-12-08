@@ -318,7 +318,7 @@ body {
 
 h1 {
   display: flex;
-  color: white;
+  color: rgb(24, 22, 22);
   justify-content: center;
 }
 
@@ -342,5 +342,5 @@ iframe {
 
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(24, 22, 22);
 }
