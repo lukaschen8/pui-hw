@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 .bg {
-  background-image: url("../hw7-assets/coffeebackground2.jpg");
+  background-image: url("../hw7-assets/cafewhitebackground.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ a {
 
 h1 {
   display: flex;
-  color: rgb(24, 22, 22);
+  color: #593a1c;
   justify-content: center;
   font-size: xx-large;
 
@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: rgb(24, 22, 22);
+  color: #593a1c;
   margin-top: 2em;
   display: flex;
   justify-content: center;
