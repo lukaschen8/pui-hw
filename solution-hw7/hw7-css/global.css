@@ -151,10 +151,25 @@ div.desc {
     display: flex;
     color: whitesmoke;
     justify-content: center;
-    font-size: large;
+    font-size: 25px;
+  }
+
+  .question {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  button {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  img {
+    width: 180px;
   }
 }
 
 /* Desktop */
 /* @media only screen and (min-width: 992px) {
-} */
+/* class w imgs class w text */
