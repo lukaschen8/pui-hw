@@ -150,6 +150,9 @@ div.desc {
 
 /* Media queries */
 /* Phones */
+/* focusing here on making the quiz answer choices (index html page) 
+turn into 2x2 grid for 
+easier usability when on the mobile modality */
 @media only screen and (max-width: 480px) {
   h1 {
     display: flex;
@@ -158,22 +161,34 @@ div.desc {
     font-size: 25px;
   }
 
-  .question {
+  /* .question {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
+  } */
 
-  button {
+  /* button {
     padding: 0px;
     margin: 0px;
-  }
+  } */
 
   img {
     width: 180px;
+  }
+
+  .answer-choice p {
+    display: flex;
+    height: 170px;
+    width: 180px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Questrial";
   }
 }
 
 /* Desktop */
 /* @media only screen and (min-width: 992px) {
-/* class w imgs class w text */
+
