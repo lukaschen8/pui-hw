@@ -54,11 +54,9 @@ h2 {
 
 .startquiz {
   background-color: #593a1c;
-  /* border: 2px solid rgb(246, 246, 246); */
   margin-left: 600px;
   margin: auto;
-  display: block;
-  /* padding: 10px 10px; */
+  display: block;/
   height: fit-content;
   font-size: 100%;
   width: 150px;
@@ -68,7 +66,7 @@ h2 {
 
 .startquiz:hover {
   background-color: #daae3d;
-  /* color: white; */
+ 
 }
 
 .question {
@@ -118,7 +116,7 @@ div.answer-choice:hover {
 
 #restart:hover {
   background-color: #0b6c89;
-  /* color: white; */
+  
 }
 
 #cafeinfo {
@@ -138,7 +136,6 @@ div.answer-choice:hover {
 
 #cafeinfo:hover {
   background-color: #a96c2b;
-  /* color: white; */
 }
 
 div.desc {
@@ -160,17 +157,6 @@ easier usability when on the mobile modality */
     justify-content: center;
     font-size: 25px;
   }
-
-  /* .question {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  } */
-
-  /* button {
-    padding: 0px;
-    margin: 0px;
-  } */
 
   img {
     width: 180px;
